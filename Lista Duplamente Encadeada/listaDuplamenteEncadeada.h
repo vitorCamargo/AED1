@@ -1,6 +1,6 @@
 typedef int T;
 
-typedef struct no{
+typedef struct no {
 	T dado;
 	struct no* ant;
 	struct no* prox;
@@ -265,7 +265,7 @@ int lista_tamanho(Lista* l) {
 
 void lista_imprime(Lista* l, void (*printElemento)(void*)) {
 	if(l == NULL)
-		printf("\nLista não encontrada");
+		printf("\nLista nï¿½o encontrada");
 		
 	No* o = l->primeiro;
 	int i;

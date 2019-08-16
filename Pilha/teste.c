@@ -3,12 +3,12 @@
 #include <stdio.h>
 #include "pilhaEncadenada.h"
 
-void printInt(void* valor){
+void printInt(void* valor) {
 	int *p = (int*) valor;
 	printf("%d", *p);
 } 
 
-void main(){
+void main() {
 	Tipo oi[3];
 	Pilha* p1 = pilha_criar();
 	Pilha* p2 = pilha_criar();

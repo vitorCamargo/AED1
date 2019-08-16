@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "filaSequencial.h"
 
-void printInt(void* valor){
+void printInt(void* valor) {
 	int *p = (int*) valor;
 	printf("%d", *p);
 } 

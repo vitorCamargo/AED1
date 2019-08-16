@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct{
+typedef struct {
 	FILE* arquivo;
 	char delimitador;
 	char* buffer;

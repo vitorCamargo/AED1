@@ -2,11 +2,11 @@
 
 typedef int Tipo;
 
-typedef struct{
+typedef struct {
     Tipo* vetor;
     int tamVetor; //tam
     int qtde; //topo
-}Pilha;
+} Pilha;
 
 Pilha* pilha_criar();
 void pilha_desalocar(Pilha* p);
@@ -85,7 +85,7 @@ int pilha_tamanho(Pilha* p){
 
 void pilha_imprimir(Pilha* p, void (*printElemento)(void*)) {
 	if(p == NULL)
-		printf("\nPilha não encontrada");
+		printf("\nPilha nï¿½o encontrada");
 	
 	int i;
 	printf("\nPilha: ");

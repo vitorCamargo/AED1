@@ -2,7 +2,7 @@
 
 typedef int T;
 
-typedef struct{
+typedef struct {
     T* vetor;
     int primeiro;
     int ultimo;
@@ -103,7 +103,7 @@ int fila_contem(Fila* f, T elemento) {
 
 void fila_imprimir(Fila* f, void (*printElemento)(void*)) {
 	if(f == NULL)
-		printf("\nFila não encontrada");
+		printf("\nFila nï¿½o encontrada");
 	
 	int i;
 	

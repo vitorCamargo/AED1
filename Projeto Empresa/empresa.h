@@ -3,14 +3,14 @@ typedef struct {
 	char* descricao;
 	float valor;
 	int qtd;
-}Produto;
+} Produto;
 
 typedef struct {
 	char nome[30];
 	int capacidade;
 	int qtd_produtos;
 	Produto** estoque;
-}Empresa;
+} Empresa;
 
 Produto* produto_novo(char* cod, char* desc, float valor);
 Empresa* empresa_novo(char* nome, int cap);
@@ -90,8 +90,8 @@ int descadastrarProduto(Empresa* e, char* cod) {
 
 void produto_imprimir(Produto* p) {
 	printf("\nProduto %s", p->cod);
-	printf("\n\tDescrição: %s", p->descricao);
-	printf("\n\tValor Unitário: R$%.2f", p->valor);
+	printf("\n\tDescriï¿½ï¿½o: %s", p->descricao);
+	printf("\n\tValor Unitï¿½rio: R$%.2f", p->valor);
 	printf("\n\tQuantidade em estoque: %d", p->qtd);
 }
 

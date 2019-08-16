@@ -1,4 +1,4 @@
-typedef struct{
+typedef struct {
     int* v; 
     int tamanho;
     int qtde;
@@ -26,10 +26,10 @@ Vetor* vetor_criar(){
 
 void vetor_inserirPosicao(Vetor* vetor, int valor, int posicao){
 	if(posicao > vetor->tamanho)
-		printf("\nPosição não existe!");
+		printf("\nPosiï¿½ï¿½o nï¿½o existe!");
 	else
 		if(vetor->v[posicao] != NULL)
-			printf("\nPosição Ocupada");
+			printf("\nPosiï¿½ï¿½o Ocupada");
 		else {
 			vetor->v[posicao] = valor;
 			vetor->qtde++;
@@ -51,7 +51,7 @@ void vetor_removerFim(Vetor* vetor){
 
 void vetor_removerPosicao(Vetor* vetor, int posicao){
 	if(posicao > vetor->tamanho)
-		printf("\nPosição não existe!");
+		printf("\nPosiï¿½ï¿½o nï¿½o existe!");
 	else {
 		vetor->v[posicao] = NULL;
 		vetor->qtde--;
@@ -80,7 +80,7 @@ int vetor_procuraPrimeiroTermo(Vetor* vetor, int termo){
 
 void vetor_edita(Vetor* vetor, int valor, int posicao){
 	if(vetor->v[posicao] == NULL)
-		printf("\nPosição desocupada");
+		printf("\nPosiï¿½ï¿½o desocupada");
 	else {
 		vetor->v[posicao] = valor;
 		vetor->qtde++;

@@ -3,9 +3,7 @@
 
 #include "Vetor.h"
 
-
-int main(){
-
+int main() {
     Vetor* v1 = vetor_criar();
     vetor_inserirFim(v1, 1);
     vetor_inserirPosicao(v1, 2, 2);

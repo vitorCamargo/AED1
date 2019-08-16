@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include "listaEncadeada.h"
 
-void printInt(void* valor){
+void printInt(void* valor) {
 	int *p = (int*) valor;
 	printf("%d", *p);
 } 
 
-int compInt(void* valor1, void* valor2){
+int compInt(void* valor1, void* valor2) {
 	int *p = (int*) valor1;
 	int *q = (int*) valor2;
 	

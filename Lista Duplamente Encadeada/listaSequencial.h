@@ -2,7 +2,7 @@
 
 typedef int T;
 
-typedef struct{
+typedef struct {
     T* vetor;
     int tamanhoVet;
     int qtde;
@@ -172,7 +172,7 @@ int lista_tamanho(Lista* l) {
 
 void lista_imprime(Lista* l, void (*imprimeElemento)(void*)) {
 	if(l == NULL)
-		printf("\nLista não encontrada");
+		printf("\nLista nï¿½o encontrada");
 	
 	int i;
 	

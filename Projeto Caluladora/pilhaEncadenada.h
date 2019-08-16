@@ -1,15 +1,15 @@
 typedef double Tipo;
 
-typedef struct no{
+typedef struct no {
 	Tipo dado;
 	char* buffer;
 	struct no* prox;
-}No;
+} No;
 
-typedef struct{
+typedef struct {
 	No* topo;
 	int qtde; //topo
-}Pilha;
+} Pilha;
 
 Pilha* pilha_criar();
 void pilha_desalocar(Pilha* p);
@@ -96,7 +96,7 @@ int pilha_tamanho(Pilha* p) {
 
 void pilha_imprimir(Pilha* p, void (*printElemento)(void*)) {
 	if(p == NULL)
-		printf("\nPilha não encontrada");
+		printf("\nPilha nï¿½o encontrada");
 		
 	No* o = p->topo;
 	int i;

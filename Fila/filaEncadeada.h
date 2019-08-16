@@ -1,11 +1,11 @@
 typedef int T;
 
-typedef struct no{
+typedef struct no {
     T dado;
     struct no* prox;
 } No;
 
-typedef struct{
+typedef struct {
     No* primeiro;
     No* ultimo;
     int qtde;
@@ -120,7 +120,7 @@ int fila_contem(Fila* f, T elemento) {
 
 void fila_imprimir(Fila* f, void (*printElemento)(void*)) {
 	if(f == NULL)
-		printf("\nFila não encontrada");
+		printf("\nFila nï¿½o encontrada");
 		
 	No* o = f->primeiro;
 	int i;
